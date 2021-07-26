@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div>
+        <p>Novo Clientes</p>
+        <form id="form-cliente">
+            <label for="cl-nome">Nome Completo:</label>
+            <input
+              type="text"
+              id="cliente-nome"
+              name="nome"
+              placeholder="Nome Completo"
+              required
+            />
+            <label for="cl-cpf">CPF:</label>
+            <input
+              type="text"
+              id="cliente-cpf"
+              name="cpf"
+              placeholder="XXX.XXX.XXX-XX"
+              max-length="11"
+              required
+            />
+            <label for="cl-cel">Celular:</label>
+            <input
+              type="cel"
+              id="cliente-cel"
+              name="cel"
+              placeholder="XX 9 XXXX-XXXX"
+              required
+            />
+            <label for="cl-email">Email:</label>
+            <input
+              type="email"
+              id="cliente-email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+            <label for="cl-cidade">Cidade:</label>
+            <input
+              type="text"
+              id="cliente-_cidade"
+              name="cidade"
+              placeholder="Cidade"
+              required
+            />
+            <label for="cl-UF">UF:</label>
+            <select id="cl-UF" name="cl-UF">
+              <option value="">Estado</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+            <div class="btn-container">
+              <input
+                type="submit"
+                id="submit_cliente"
+                value="Salvar"
+                class="btn-salvar"
+              />
+              
+              <button class="btn-volta" onclick="voltar()">Voltar</button>
+              
+            </div>
+          </form>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
